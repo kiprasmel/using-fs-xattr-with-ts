@@ -1,0 +1,20 @@
+{
+	"name": "testing-fs-xattr",
+	"version": "0.0.0",
+	"main": "index.js",
+	"author": "Kipras Melnikovas <kipras@kipras.org> (https://kipras.org/)",
+	"license": "UNLICENSED",
+	"scripts": {
+		"build": "yarn --cwd fs-xattr build && yarn tsc -b .",
+		"dev": "yarn ts-node-dev ./src/index.ts",
+		"dev2": "yarn build && node ./dist/index.js"
+	},
+	"dependencies": {
+		"typescript": "^4.4.3"
+	},
+	"devDependencies": {
+		"@types/node": "^16.10.2",
+		"node-gyp": "^8.2.0",
+		"ts-node-dev": "^1.1.8"
+	}
+}
