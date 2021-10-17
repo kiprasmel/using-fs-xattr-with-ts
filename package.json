@@ -7,7 +7,7 @@
 	"type": "module",
 	"scripts": {
 		"build": "yarn tsc -b .",
-		"dev": "node --loader ts-node/esm ./src/index.ts",
+		"dev": "NODE_OPTIONS=--loader=ts-node/esm nodemon ./src/index.ts",
 		"dev2": "yarn build && node ./dist/index.js"
 	},
 	"dependencies": {
@@ -17,6 +17,7 @@
 	"devDependencies": {
 		"@types/node": "^16.10.2",
 		"node-gyp": "^8.2.0",
-		"ts-node-dev": "^1.1.8"
+		"nodemon": "^2.0.13",
+		"ts-node": "^10.3.0"
 	}
 }
