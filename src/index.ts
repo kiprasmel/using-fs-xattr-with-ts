@@ -1,4 +1,4 @@
-import { getAttribute, setAttribute } from "../fs-xattr";
+import { getAttribute, setAttribute } from "fs-xattr";
 
 main();
 
