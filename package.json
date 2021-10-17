@@ -4,12 +4,14 @@
 	"main": "index.js",
 	"author": "Kipras Melnikovas <kipras@kipras.org> (https://kipras.org/)",
 	"license": "UNLICENSED",
+	"type": "module",
 	"scripts": {
-		"build": "yarn --cwd fs-xattr build && yarn tsc -b .",
-		"dev": "yarn ts-node-dev ./src/index.ts",
+		"build": "yarn tsc -b .",
+		"dev": "node --loader ts-node/esm ./src/index.ts",
 		"dev2": "yarn build && node ./dist/index.js"
 	},
 	"dependencies": {
+		"fs-xattr": "^0.4.0",
 		"typescript": "^4.4.3"
 	},
 	"devDependencies": {

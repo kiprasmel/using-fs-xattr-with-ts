@@ -1,3 +1,0 @@
-[submodule "fs-xattr"]
-	path = fs-xattr
-	url = https://github.com/kiprasmel/fs-xattr.git
